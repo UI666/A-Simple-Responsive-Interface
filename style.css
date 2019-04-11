@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+/*topbar*/
+#top-bar {
+  background-color: white;
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  width: 100%; }
+  #top-bar .logo {
+    background-color: #d3f0ff;
+    -webkit-box-flex: 2;
+    -webkit-flex: 2;
+    flex: 2;
+    order: 1;
+    width: 15%;
+    margin: 1% 4%;
+    text-align: center; }
+    @media (max-width: 330px) {
+      #top-bar .logo {
+        width: 20%;
+        padding: 1%;
+        margin: 1% 39% 1% 39%; } }
+    #top-bar .logo h1 {
+      text-transform: uppercase;
+      font-size: 25px;
+      margin: 8% 0; }
+      @media (max-width: 330px) {
+        #top-bar .logo h1 {
+          font-size: 15px;
+          margin: 2% 0; } }
+  #top-bar .menu {
+    background-color: #f0f0f0;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    order: 2;
+    margin: 1%; }
+    #top-bar .menu ul {
+      list-style: none;
+      text-align: center; }
+      #top-bar .menu ul li {
+        text-decoration: none;
+        text-transform: lowercase;
+        font-size: 25px; }
+        @media (max-width: 330px) {
+          #top-bar .menu ul li {
+            font-size: 10px;
+            padding: 1%; } }
+
+/*content*/
+.content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal; }
+  @media (max-width: 330px) {
+    .content {
+      flex-flow: column wrap; } }
+  .content .left-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    flex: 2;
+    order: 1;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin: 11% 0% 1% 1%; }
+    @media (max-width: 330px) {
+      .content .left-container {
+        order: 2;
+        width: 92%;
+        margin: 2% 4% 4% 4%; } }
+    .content .left-container .top {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex: 2;
+      order: 1;
+      width: 90%;
+      margin: 3% 0; }
+      @media (max-width: 330px) {
+        .content .left-container .top {
+          flex-flow: column wrap;
+          width: 87%; } }
+      .content .left-container .top .image {
+        background-color: #d3f0ff;
+        flex: 7;
+        order: 1;
+        text-align: center; }
+        @media (max-width: 330px) {
+          .content .left-container .top .image {
+            font-size: 20px;
+            padding: 15% 5% 15% 5%; } }
+        .content .left-container .top .image h1 {
+          font-size: 30px;
+          margin: 25% 0; }
+          @media (max-width: 330px) {
+            .content .left-container .top .image h1 {
+              font-size: 20px;
+              margin: 15% 0; } }
+      .content .left-container .top .title {
+        background-color: #f0f0f0;
+        flex: 3;
+        order: 1; }
+        .content .left-container .top .title h1 {
+          font-size: 30px;
+          padding: 25% 15% 0% 15%; }
+          @media (max-width: 330px) {
+            .content .left-container .top .title h1 {
+              font-size: 15px;
+              padding: 2% 0% 0% 5%; } }
+        .content .left-container .top .title p {
+          font-size: 18px;
+          padding: 15%; }
+          @media (max-width: 330px) {
+            .content .left-container .top .title p {
+              font-size: 9px;
+              padding: 2% 5% 2% 5%; } }
+    .content .left-container .bottom {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      flex: 3;
+      order: 2;
+      width: 90%; }
+      @media (max-width: 330px) {
+        .content .left-container .bottom {
+          width: 87%; } }
+      .content .left-container .bottom .row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex: 1;
+        width: 100%; }
+        @media (max-width: 330px) {
+          .content .left-container .bottom .row {
+            flex-flow: column wrap; } }
+        .content .left-container .bottom .row .item {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+          flex-direction: column;
+          flex: 3;
+          width: 100%;
+          flex: 1;
+          margin: 3%; }
+          @media (max-width: 330px) {
+            .content .left-container .bottom .row .item {
+              margin: 3% 0; } }
+          .content .left-container .bottom .row .item .item-head {
+            background-color: #c7d0ff;
+            flex: 3;
+            padding: 30%; }
+            @media (max-width: 330px) {
+              .content .left-container .bottom .row .item .item-head {
+                padding: 18%; } }
+          .content .left-container .bottom .row .item .item-title {
+            background-color: #f0f0f0;
+            text-align: center;
+            flex: 1;
+            padding: 3%;
+            font-size: 15px; }
+            @media (max-width: 330px) {
+              .content .left-container .bottom .row .item .item-title {
+                font-size: 10px; } }
+    .content .left-container .banner {
+      border: 1px #ccc solid;
+      flex: 2;
+      order: 3;
+      text-align: center;
+      width: 85%;
+      margin: 2% 0; }
+      @media (max-width: 330px) {
+        .content .left-container .banner {
+          font-size: 15px;
+          width: 87%; } }
+      .content .left-container .banner h1 {
+        font-size: 40px;
+        margin: 4% 0; }
+        @media (max-width: 330px) {
+          .content .left-container .banner h1 {
+            font-size: 15px; } }
+  .content .right-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    flex: 1;
+    order: 2;
+    height: 50%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin: 11% 1% 1% 0%; }
+    @media (max-width: 330px) {
+      .content .right-container {
+        order: 1;
+        width: 100%; } }
+    .content .right-container #box1 {
+      background-color: #fdefff;
+      flex: 3;
+      order: 1;
+      text-align: center;
+      width: 80%;
+      margin: 6% 0; }
+      @media (max-width: 330px) {
+        .content .right-container #box1 {
+          font-size: 20px; } }
+      .content .right-container #box1 h1 {
+        font-size: 40px;
+        margin: 16% 0; }
+        @media (max-width: 330px) {
+          .content .right-container #box1 h1 {
+            font-size: 20px; } }
+    .content .right-container #box2 {
+      background-color: #fdefff;
+      flex: 3;
+      order: 2;
+      text-align: center;
+      width: 80%;
+      margin: 6% 0; }
+      .content .right-container #box2 h1 {
+        font-size: 40px;
+        margin: 16% 0; }
+        @media (max-width: 330px) {
+          .content .right-container #box2 h1 {
+            font-size: 20px; } }
+    .content .right-container #box3 {
+      background-color: #ffeece;
+      flex: 3;
+      order: 3;
+      text-align: center;
+      width: 80%;
+      margin: 6% 0; }
+      .content .right-container #box3 h1 {
+        font-size: 40px;
+        margin: 16% 0; }
+        @media (max-width: 330px) {
+          .content .right-container #box3 h1 {
+            font-size: 20px; } }
+
+/*sticky property*/
+@media (max-width: 330px) {
+  .sticky {
+    position: fixed;
+    top: 38px;
+    height: 15%; } }
+
+/*# sourceMappingURL=style.css.map */

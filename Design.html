@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv = "X-UA-Compatble]" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initail-scale=1">
+	<title>Responsive Design</title>
+	<link rel = "stylesheet" href = "style.css"/>
+</head>
+<body>
+	
+	<div id="top-bar">
+		<div class="logo">
+            <h1>Logo</h1>
+        </div>
+		<div class="menu">
+		    <ul>
+		        <li>menuebar</li>
+		    </ul>
+		</div>
+	</div>
+	
+	
+	<div class = "content">
+		<div class = "left-container">
+		
+			<div class = "top">
+				<div class = "image">
+				    <h1>Image</h1>
+				</div>
+				<div class = "title">
+					<h1>Title</h1>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+				</div>
+			</div>
+			
+			
+			<div class = "bottom">
+				<div class ="row">
+					<div class = "item">
+						<div class = "item-head"></div>
+						<div class = "item-title">News Title</div>
+					</div>
+					<div class = "item">
+						<div class = "item-head"></div>
+						<div class = "item-title">News Title</div>
+					</div>
+					<div class = "item">
+						<div class = "item-head"></div>
+						<div class = "item-title">News Title</div>
+					</div>
+				</div>
+				<div class ="row">
+					<div class = "item">
+						<div class = "item-head"></div>
+						<div class = "item-title">News Title</div>
+					</div>
+					<div class = "item">
+						<div class = "item-head"></div>
+						<div class = "item-title">News Title</div>
+					</div>
+					<div class = "item">
+						<div class = "item-head"></div>
+						<div class = "item-title">News Title</div>
+					</div>
+				</div>
+				<div class ="row">
+					<div class = "item">
+						<div class = "item-head"></div>
+						<div class = "item-title">News Title</div>
+					</div>
+					<div class = "item">
+						<div class = "item-head"></div>
+						<div class = "item-title">News Title</div>
+					</div>
+					<div class = "item">
+						<div class = "item-head"></div>
+						<div class = "item-title">News Title</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class = "banner">
+                <h1>Banner</h1>
+            </div>
+			
+		</div>
+		
+		<div class = "right-container">
+			<div id = "box1">
+			    <h1>1st</h1>
+			</div>
+			<div id = "box2">
+			    <h1>2nd</h1>
+			</div>
+			<div id = "box3">
+			    <h1>3rd</h1>
+			</div>
+		</div>
+	</div>
+</body>
+   
+   <script >
+        window.onscroll = function(){
+            myFunction();
+        }
+        
+        var stickybox = document.getElementById("box3");
+        var position = stickybox.offsetTop;
+       
+        var topbar = document.getElementById("top-bar");
+        var pading = topbar.offsetHeight;
+       
+        
+        //var mobilepx = getComputedStyle(document.documentElement).getPropertyValue('$mobile');
+        //var rightcontainer = document.getElementById("right-container");
+        //var margin = rightcontainer.offsetTop;
+        //var padding = 139;
+        //var padding = 62;
+        
+        function myFunction()
+        {
+            if(window.pageYOffset > (position-pading))
+            {
+                stickybox.classList.add("sticky");
+            }
+            else
+            {
+                stickybox.classList.remove("sticky");
+            }
+        }
+    </script>
+    
+</html>
